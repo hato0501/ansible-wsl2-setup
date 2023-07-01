@@ -8,3 +8,6 @@
  
 - import_tasks: 003_install-utility-packages.yaml
   tags: common-install-packages
+
+- import_tasks: 004_setup_git.yaml
+  tags: common-setup-git

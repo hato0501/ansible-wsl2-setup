@@ -1,0 +1,17 @@
+- name: Change Git config
+  become: no
+  git_config:
+    scope: global
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+  loop:
+    - name: user.name
+      value: hato0501
+    - name: user.email
+      value: k.harada.dev@gmail.com
+    - name: color.ui
+      value: auto
+    - name: fetch.prune 
+      value: true
+    - name: pull.ff
+      value: only
