@@ -1,5 +1,7 @@
 ---
- 
+- import_tasks: 005_setup-resolv-conf.yaml
+  tags: common-setup-resolv-conf
+
 - import_tasks: 001_change-package-repository-to-japanese.yaml
   tags: common-repo
  
@@ -9,5 +11,5 @@
 - import_tasks: 003_install-utility-packages.yaml
   tags: common-install-packages
 
-- import_tasks: 004_setup_git.yaml
+- import_tasks: 004_setup-git.yaml
   tags: common-setup-git
