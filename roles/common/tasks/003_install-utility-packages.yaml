@@ -1,0 +1,11 @@
+---
+ 
+- name: Install various utility packages.
+  apt:
+    name: "{{ common.packages }}"
+    state: present
+
+- name: Install AWS CLI
+  pip:
+    name: awscli
+    executable: pip3

@@ -1,0 +1,12 @@
+---
+ 
+- name: Configure Ubuntu-22.04 LTS (Jammy Jellyfish) settings for Windows Subsystem for Linux 2.
+  hosts: local
+  tasks:
+    - import_role:
+        name: user
+      tags: user
+ 
+    - import_role:
+        name: common
+      tags: common

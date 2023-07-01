@@ -1,0 +1,17 @@
+---
+ 
+ansible_host: localhost
+ansible_connection: local
+ansible_python_interpreter: "/usr/bin/env python3"
+
+common:
+  packages:
+    - make
+    - git
+    - vim
+    - tree
+    - jq
+    - nkf
+    - zip
+    - unzip
+    - python3-pip

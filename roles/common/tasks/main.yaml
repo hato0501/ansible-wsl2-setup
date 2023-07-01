@@ -1,0 +1,10 @@
+---
+ 
+- import_tasks: 001_change-package-repository-to-japanese.yaml
+  tags: common-repo
+ 
+- import_tasks: 002_update-all-packages.yaml
+  tags: common-update-packages
+ 
+- import_tasks: 003_install-utility-packages.yaml
+  tags: common-install-packages
