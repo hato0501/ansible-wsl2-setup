@@ -26,6 +26,8 @@ sudo apt-get install ansible -y
 ansible-playbook -i inventories/hosts.ini -l jammy playbook.yaml
 ```
 
+## Please edit
+- git config -> [roles/common/tasks/004_setup-git.yaml](roles/common/tasks/004_setup-git.yaml)
 
 ## Run
 ```sh
@@ -38,6 +40,8 @@ ansible-playbook -i inventories/hosts.ini -l jammy playbook.yaml --diff
 
 
 ## Stack
-
+- common: [host_vars/localhost.yaml](host_vars/localhost.yaml)
+- awscli
 
 ## Prerequired
+- Ansible
