@@ -1,0 +1,15 @@
+---
+- name: Install Tailscale
+  shell: |
+    curl -fsSL https://tailscale.com/install.sh | sh
+  become: yes
+
+- name: Start Tailscale daemon
+  shell: |
+    nohup tailscaled > /dev/null 2>&1 &
+  become: yes
+
+- name: Connect Tailscale
+  shell: |
+    tailscale up
+  become: yes

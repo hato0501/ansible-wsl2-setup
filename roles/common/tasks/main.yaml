@@ -13,3 +13,9 @@
 
 - import_tasks: 004_setup-git.yaml
   tags: common-setup-git
+
+- import_tasks: 006_setup-tailscale.yaml
+  tags: common-setup-tailscale
+
+- import_tasks: 007_setup-openssh.yaml
+  tags: common-setup-openssh

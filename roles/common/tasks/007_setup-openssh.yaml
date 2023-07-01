@@ -1,0 +1,21 @@
+---
+- name: Ensure openssh-server is installed
+  apt:
+    name: openssh-server
+    state: present
+
+- name: Start sshd service
+  service:
+    name: ssh
+    state: started
+
+# - name: Setup public key authentication
+#   authorized_key:
+#     user: hato0501
+#     state: present
+#     key: "{{ lookup('file', '/path/to/your/public/key.pub') }}"
+
+- name: Allow SSH through the firewall
+  ufw:
+    rule: allow
+    name: OpenSSH

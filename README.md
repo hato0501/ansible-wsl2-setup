@@ -29,6 +29,9 @@ ansible-playbook -i inventories/hosts.ini -l jammy playbook.yaml
 ## Please edit
 - git config -> [roles/common/tasks/004_setup-git.yaml](roles/common/tasks/004_setup-git.yaml)
 
+## For SSH connection
+- Please set public key for ssh into `~/.ssh/authorized_keys`
+
 ## Run
 ```sh
 # Dry run
